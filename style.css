@@ -1,0 +1,362 @@
+.scrollnav {
+    background-color: rgba(0, 0, 0, .7) !important;
+    transition: .5s !important;
+}
+
+.btn-book {
+    height: 40px;
+    width: 150px;
+    border: none;
+    outline: none;
+    font-style: italic;
+    font-size: 17px;
+    color: black;
+    margin-left: 10px;
+    background-color: #ffb03b;
+    border-radius: 20px;
+}
+
+.btn-book:hover {
+    background-color: #ce861a;
+}
+
+.btn-menu {
+    border: 2px solid #ffb03b;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.btn-menu:hover {
+    background-color: #ffb03b;
+    transition: .3s;
+}
+
+.div1 {
+    height: 70vh;
+    background-image: url(./img/about.jpg);
+    background-size: 100% 100%;
+}
+
+.video-box .play-btn {
+    background: #ffb03b;
+    color: white;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+}
+
+.play-btn .fa-play {
+    line-height: 80px;
+    margin-left: 5px;
+}
+
+.video-box .play-btn::before,
+.video-box .play-btn::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #ffb03b;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+
+.video-box .play-btn::after {
+    animation-delay: .5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(.5);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.special-data-links ul {
+    list-style: none;
+    padding: 0;
+    /* border: 2px solid blue; */
+}
+
+.special-data-link {
+    font-weight: 700;
+    cursor: pointer;
+    padding: 7.4px 0;
+    border-right: 2px solid rgba(0, 0, 0, .2);
+    transition: .3s;
+}
+
+.special-data-links ul li:hover {
+    color: #FFC107;
+}
+
+.special-data-link-active {
+    border-color: #FFC107;
+    color: #FFC107;
+}
+
+.special-data img {
+    width: 250px;
+    /* border: 2px solid; */
+    padding: 0;
+}
+.book-table .container{
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+    padding: 40px 20px;
+}
+
+.book-table button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    color: white;
+    padding: 10px 30px;
+}
+.menu-card-1 {
+    height: 38vh;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px 0px rgb(248, 247, 247);
+    padding-left: 10px;
+    transition-duration: .9s;
+}
+
+.menu-card-1>h2 {
+    font-family: French Script MT;
+    transition-duration: .8s;
+    font-size: 2.45rem;
+}
+
+.menu-card-1>p:nth-child(1) {
+    color: #FFC107;
+    transition-duration: .8s;
+}
+
+.menu-card-1>p:nth-child(3) {
+    letter-spacing: 1.2px;
+    color: grey;
+    font-weight: lighter;
+}
+
+.menu-card-1:hover {
+    cursor: pointer;
+    background-color: #fd7e14;
+    box-shadow: 0px 0px 10px 0px #f6750c;
+    border-radius: 10px;
+    transition: .9s;
+}
+
+.menu-card-1:hover>p {
+    transform: translateY(-20px);
+    color: white;
+    transition: .2s;
+}
+
+.menu-card-1:hover>h2 {
+    transform: translateY(-20px);
+    transition: .3s;
+    color: white;
+}
+
+.btn-fixed {
+    background-color: #ffb03b;
+    color: white;
+}
+.btn-tasty
+{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.btn-tasty:hover
+{
+    background-color: #ffb03b;
+    color: white;
+}
+.event {
+    padding: 50px;
+    height: auto;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(./img/gallery-2.jpg);
+    background-size: 100% 100%;
+
+}
+
+.eve img {
+    height: 100%;
+    width: 100%;
+}
+
+.wrap {
+    overflow: hidden;
+}
+
+.wrap:hover img {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.wrap img {
+    height: 100%;
+    transition: .3s;
+    width: 100%;
+}
+
+.gallery-show {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 20;
+    visibility: hidden;
+}
+
+.show {
+    height: 70vh;
+    width: 50%;
+}
+
+.show img {
+    height: 100%;
+    width: 100%;
+}
+
+.fa-times {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.fa-times:hover {
+    color: #ffb03b;
+}
+
+.our-team {
+    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(./img/gallery-3.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.our-team .h1 {
+    color: #1C5C93;
+}
+
+.team-card {
+    position: relative;
+}
+
+.team-card img {
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+}
+
+.member-info {
+    position: relative;
+    bottom: 50px;
+}
+
+.link:hover {
+    color: #ffb03b;
+}
+
+.slider {
+    height: auto;
+    width: 100%;
+    background-image: url(./img/gallery-5.jpg);
+    background-size: 100% 100%;
+    padding: 50px;
+}
+
+.s-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: url(./img/testimonials-1.jpg);
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 7px 5px silver;
+}
+
+.s-img1 {
+    background-image: url(./img/testimonials-2.jpg);
+}
+
+.s-img2 {
+    background-image: url(./img/testimonials-3.jpg);
+}
+
+.s-img3 {
+    background-image: url(./img/testimonials-4.jpg);
+}
+
+.s-img4 {
+    background-image: url(./img/testimonials-5.jpg);
+}
+
+.locate {
+    height: 50px;
+    width: 50px;
+    background: rgba(255, 176, 59, .4);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.l-icon {
+    color: #ffb03b;
+    font-size: 25px;
+}
+
+.l-parent:hover .locate {
+    background: #ffb03b;
+}
+
+.l-parent:hover .l-icon {
+    color: white;
+}
+
+.m {
+    height: 40px;
+    width: 40px;
+    background-color: #46423B;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m:hover {
+    background-color: #ffb03b;
+}
+
+.m i {
+    color: white;
+    font-size: 20px;
+}
